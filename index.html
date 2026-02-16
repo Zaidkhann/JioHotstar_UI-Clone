@@ -17,6 +17,7 @@
         height: 50vh;
         padding-top: 2px;
         background-image: linear-gradient(270deg, rgb(25, 28, 43) 0%, rgb(15, 16, 20) 100%);
+        margin-right: 1vw;
     }
  
    #img_ad{
@@ -37,8 +38,269 @@
        margin-left: 10px;
       
     }
+    #imgAnimation{
+        animation: slide 35s infinite;
+        position: relative;
+        z-index: 1;
+    }
+    @keyframes slide{
+        0%,15% {
+    transform: translateX(0);
+  }
+  20% , 35%{
+    transform: translateX(-90vw);
+  }
+  40% , 55%{
+    transform: translateX(-180vw);
+  }
+  60%,75%{
+    transform: translateX(-270vw);
+  }
+  80%,95%{
+    transform: translateX(-360vw);
+  }
+  
+
+  100% {
+    transform: translateX(0);
+  }
+    }
+
+
+.watchnow_button{
+    position: absolute;
+    width: 26vw;
+    display: flex;              
+    justify-content: center;    
+    align-items: center;
+    height: 10vh;
+    color: white;
+    font-weight: bolder;
+    font-size: 1.4rem;
+    background: linear-gradient(100deg, rgb(57, 101, 196),rgb(231, 0, 127));
+    border-radius: 6px;
+    left: 68%;
+    top: 80%;
+    
+    
+    
+}
+.watchnow_button2{
+    position: absolute;
+    width: 26vw;
+    display: flex;              
+    justify-content: center;    
+    align-items: center;
+    height: 10vh;
+    color: white;
+    font-weight: bolder;
+    font-size: 1.4rem;
+    background: linear-gradient(100deg, rgb(57, 101, 196),rgb(231, 0, 127));
+    border-radius: 6px;
+    left: 166%;
+    top: 80%;
+    
+    
+}
+.watchnow_button3{
+    position: absolute;
+    width: 26vw;
+    display: flex;              
+    justify-content: center;    
+    align-items: center;
+    height: 10vh;
+    color: white;
+    font-weight: bolder;
+    font-size: 1.4rem;
+    background: linear-gradient(100deg, rgb(57, 101, 196),rgb(231, 0, 127));
+    border-radius: 6px;
+    left: 265%;
+    top: 80%;
+    
+    
+}
+.watchnow_button4{
+    position: absolute;
+    width: 26vw;
+    display: flex;              
+    justify-content: center;    
+    align-items: center;
+    height: 10vh;
+    color: white;
+    font-weight: bolder;
+    font-size: 1.4rem;
+    background: linear-gradient(100deg, rgb(57, 101, 196),rgb(231, 0, 127));
+    border-radius: 6px;
+    left: 367%;
+    top: 80%;
+    
+    
+}
+.watchnow_button5{
+    position: absolute;
+    width: 26vw;
+    display: flex;              
+    justify-content: center;    
+    align-items: center;
+    height: 10vh;
+    color: white;
+    font-weight: bolder;
+    font-size: 1.4rem;
+    background: linear-gradient(100deg, rgb(57, 101, 196),rgb(231, 0, 127));
+    border-radius: 6px;
+    left: 466%;
+    top: 80%;
+    
+    
+}
+
+.herapherI{
+    position: absolute;
+    display: flex;
+    top: 70%;
+    width: 30vw;
+    height: 22vh;
+    left: 305%;
+    top: 60%;
+}
+.dolittle{
+    position: absolute;
+    display: flex;
+    top: 70%;
+    width: 30vw;
+    height: 22vh;
+    left: 5%;
+    top: 40%;
+}
+.conjuring{
+    position: absolute;
+    display: flex;
+    top: 70%;
+    width: 30vw;
+    height: 22vh;
+    left: 105%;
+    top: 40%;
+}
+.the-50{
+    position: absolute;
+    display: flex;
+    top: 70%;
+    width: 15vw;
+    height: 15vh;
+    left: 205%;
+    top: 10%;
+}
+
+.kis-kisko-pyaar-karoon-2{
+    position: absolute;
+    display: flex;
+    top: 70%;
+    width: 15vw;
+    height: 15vh;
+    left: 405%;
+    top: 50%;
+}
+
+#dolittleText{
+    position: absolute;
+    display: inline-block;
+    top: 65%;
+    left: 7%;
+    color: white;
+    width: 30vw;
+    
+}
+#conjuringText{
+    position: absolute;
+    display: inline-block;
+    top: 65%;
+    left: 107%;
+    color: white;
+    width: 30vw;
+    
+}
+#the50Text{
+    position: absolute;
+    display: inline-block;
+    top: 65%;
+    left: 207%;
+    color: white;
+    width: 30vw;
+    
+}
+#phirherapherText{
+    position: absolute;
+    display: inline-block;
+    top: 8%;
+    left: 301%;
+    color: rgb(44, 44, 44);
+    font-weight: bold;
+    width: 30vw;
+    
+}
+#kiskiskoText{
+    position: absolute;
+    display: inline-block;
+    top: 65%;
+    left: 407%;
+    color: white;
+    width: 30vw;
+   
+    
+}
+
+
+.top-trend-movies{
+    display: flex;
+    width: 89vw;
+    height: auto;
+    justify-self: right;
+    gap: 10px;
+    flex-wrap: wrap;
+    row-gap: 28px;
+}
+
+
+.top-trend-movies img{
+    width: 15vw;
+    height: 38vh;
+    border-radius: 8px;
+    position: relative;
+    
+
+}
+
+.nav{
+    display: flex;
+    flex-direction: column;
+    width: 9vw;
+    height: 100vh;
+    position:fixed ;
+    justify-self: left;
+    align-self: self-start;
+    justify-items: center;
+    background-color: rgb(15, 16, 20);
+    z-index: 1000;
+}
+
+.logo_cls{
+    width: 7vw;
+    height: 5vh;
+    justify-items: center;
+    margin-top: 30px;
+}
+
+
 </style>
 <body style="background-color: rgb(15, 16, 20);">
+
+    <div class="nav">
+        <div class="logo_cls">
+        <img style="width: 51px; height: 38px;" src="Hotstar_clone_elements/logo.png" alt="">
+        </div>
+    </div>
+
+
     <div class="advertisement">
         <img id="img_ad" src="Hotstar_clone_elements/Screenshot 2026-02-14 230512.png" alt="No advertisement">
         <div style="flex-direction: column; align-self: self-start; margin-top: 30px;">
@@ -49,5 +311,88 @@
             <a target="_blank" id="button_ad" href="https://zakhaai.onrender.com/">Try Now</a>
     </div>
     </div>
+    <div class="overflow-hidden">
+    <div id="imgAnimation" class="relative w-[89vw] ml-auto flex  shrink-0 ">
+        <img src="Hotstar_clone_elements/1769066218889-i.png" alt="">
+        <img src="Hotstar_clone_elements/1769498720615-i.png" alt="">
+        <img src="Hotstar_clone_elements/1770212880233-i.png" alt="">
+        <img src="Hotstar_clone_elements/1734519251137-i.png" alt="">
+        <img src="Hotstar_clone_elements/1770317011704-i.png" alt="">
+        
+    
+
+        <a class="watchnow_button" href="https://www.hotstar.com/in/movies/dolittle/1971000918/watch">Watch Now</a>
+        <a class="watchnow_button2" href="https://www.hotstar.com/in/movies/the-conjuring-last-rites/1271526246/watch">Watch Now</a>
+        <a class="watchnow_button3" href="https://www.hotstar.com/in/shows/the-50/1271519546/watch?fallbackEpisodeId=1271526374">Watch Now</a>
+        <a class="watchnow_button4" href="https://www.hotstar.com/in/movies/phir-hera-pheri/1971011095/watch?search_query=phir">Watch Now</a>
+        <a class="watchnow_button5" href="https://www.hotstar.com/in/movies/kis-kisko-pyaar-karoon-2/1271527818/watch">Watch Now</a>
+
+        <img class="herapherI" src="Hotstar_clone_elements/herapheri.png" alt="">
+        <img class="dolittle" src="Hotstar_clone_elements/dolittle.png" alt="">
+        <img class="conjuring" src="Hotstar_clone_elements/conjuring.png" alt="">
+        <img class="the-50" src="Hotstar_clone_elements/the50.png" alt="">
+        <img class="kis-kisko-pyaar-karoon-2" src="Hotstar_clone_elements/kiskiskopyarkrun.png" alt="">
+
+        <p id="dolittleText">
+            <b>2020 • U/A 7+ • 1h 37m • 4 Languages</b><br><br>
+
+            Robert Downey Jr. electrifies one of literature's most enduring characters in a vivid reimagining of the classic tale of the man who could talk <br><br>
+            <b>Action | Adventure | Comedy | Family</b>
+        </p>
+        <p id="conjuringText">
+            <b>2025 • A • 2h 15m • 4 Languages </b><br><br>
+
+            Experience the case that strikes at the core of Ed and Lorraine's mission and attacks the very heart of the  Warren family... their daughter, Judy.<br><br>
+            <b>Horror | Paranormal | Supernatural | </b>
+
+        </p>
+
+        <p id="the50Text">
+            <b>2026 • U/A 16+ • Hindi </b><br><br>
+
+India's biggest reality show is about to redefine reality! 50 celebs face survival challenges and intense mind games under the watchful eye of the masked lion.<br><br>
+
+<b>Reality | Celebrities | Competition | Feel Good</b>
+        </p>
+
+        <p id="phirherapherText">
+            <b>2006 • U/A 7+ • 2h 30m • Hindi</b><br><br>
+
+A scam leaves Babu Bhaiya, Raju, and Shyam in Tiwari's debt. Desperate, they turn to drugs. Can they outsmart Tiwari and regain their wealth?<br><br>
+
+<b>Comedy | Slapstick | Goofy | Ensemble </b>
+        </p>
+
+        <p id="kiskiskoText">
+            <b>2025 • U/A 16+ • 2h 21m • Hindi</b><br><br>
+
+Mohan wants to marry the love of his life, Sania, but destiny has a madcap plan! He ends up marrying three women of different religions, and chaos follows.<br><br>
+
+<b>Comedy | Drama | Slapstick | Hidden Identity</b>
+        </p>
+
+
+    </div>
+    </div>
+
+    
+<br><br>
+<p style="font-weight: bolder; color: white; font-size:x-large; margin-left: 9vw;">Popular Movies</p><br>
+    <div class="top-trend-movies">
+        <img src="Hotstar_clone_elements/trend1.png" alt="">
+        <img src="Hotstar_clone_elements/trend2.png" alt="">
+        <img src="Hotstar_clone_elements/trend3.png" alt="">
+        <img src="Hotstar_clone_elements/trend4.png" alt="">
+        <img src="Hotstar_clone_elements/trend5.avif" alt="">
+        <img src="Hotstar_clone_elements/trend6.avif" alt="">
+        <img src="Hotstar_clone_elements/trend7.png" alt="">
+        <img src="Hotstar_clone_elements/trend8.avif" alt="">
+        <img src="Hotstar_clone_elements/trend9.avif" alt="">
+        <img src="Hotstar_clone_elements/trend10.avif" alt="">
+     
+    </div>
+
+   
+
 </body>
 </html>
