@@ -17,6 +17,7 @@
         height: 50vh;
         padding-top: 2px;
         background-image: linear-gradient(270deg, rgb(25, 28, 43) 0%, rgb(15, 16, 20) 100%);
+        margin-right: 1vw;
     }
  
    #img_ad{
@@ -39,22 +40,24 @@
     }
     #imgAnimation{
         animation: slide 35s infinite;
+        position: relative;
+        z-index: 1;
     }
     @keyframes slide{
         0%,15% {
     transform: translateX(0);
   }
   20% , 35%{
-    transform: translateX(-89vw);
+    transform: translateX(-90vw);
   }
   40% , 55%{
-    transform: translateX(-178vw);
+    transform: translateX(-180vw);
   }
   60%,75%{
-    transform: translateX(-267vw);
+    transform: translateX(-270vw);
   }
   80%,95%{
-    transform: translateX(-356vw);
+    transform: translateX(-360vw);
   }
   
 
@@ -78,6 +81,7 @@
     border-radius: 6px;
     left: 68%;
     top: 80%;
+    
     
     
 }
@@ -262,13 +266,41 @@
     height: 38vh;
     border-radius: 8px;
     position: relative;
+    
 
 }
 
+.nav{
+    display: flex;
+    flex-direction: column;
+    width: 9vw;
+    height: 100vh;
+    position:fixed ;
+    justify-self: left;
+    align-self: self-start;
+    justify-items: center;
+    background-color: rgb(15, 16, 20);
+    z-index: 1000;
+}
+
+.logo_cls{
+    width: 7vw;
+    height: 5vh;
+    justify-items: center;
+    margin-top: 30px;
+}
 
 
 </style>
 <body style="background-color: rgb(15, 16, 20);">
+
+    <div class="nav">
+        <div class="logo_cls">
+        <img style="width: 51px; height: 38px;" src="Hotstar_clone_elements/logo.png" alt="">
+        </div>
+    </div>
+
+
     <div class="advertisement">
         <img id="img_ad" src="Hotstar_clone_elements/Screenshot 2026-02-14 230512.png" alt="No advertisement">
         <div style="flex-direction: column; align-self: self-start; margin-top: 30px;">
@@ -343,13 +375,14 @@ Mohan wants to marry the love of his life, Sania, but destiny has a madcap plan!
     </div>
     </div>
 
+    
 <br><br>
 <p style="font-weight: bolder; color: white; font-size:x-large; margin-left: 9vw;">Popular Movies</p><br>
     <div class="top-trend-movies">
         <img src="Hotstar_clone_elements/trend1.png" alt="">
         <img src="Hotstar_clone_elements/trend2.png" alt="">
         <img src="Hotstar_clone_elements/trend3.png" alt="">
-        <img src="Hotstar_clone_elements/trend4.avif" alt="">
+        <img src="Hotstar_clone_elements/trend4.png" alt="">
         <img src="Hotstar_clone_elements/trend5.avif" alt="">
         <img src="Hotstar_clone_elements/trend6.avif" alt="">
         <img src="Hotstar_clone_elements/trend7.png" alt="">
@@ -358,51 +391,8 @@ Mohan wants to marry the love of his life, Sania, but destiny has a madcap plan!
         <img src="Hotstar_clone_elements/trend10.avif" alt="">
      
     </div>
-    <img style="position: absolute; 
-            top: 201%;   
-            width: 13vw; 
-            left: 11%;
-    " src="Hotstar_clone_elements/tr1.avif" alt="">
-    <img style="position: absolute; 
-            top: 180%;   
-            width: 13vw; 
-            left: 27%;
-    " src="Hotstar_clone_elements/tr2.avif" alt="">
-     <img style="position: absolute; 
-            top: 208%;   
-            width: 13vw; 
-            left: 42%;
-    /* " src="Hotstar_clone_elements/tr3.avif" alt=""> 
-    <img style="position: absolute; 
-            top: 204%;   
-            width: 10vw; 
-            left: 60%;
-    " src="Hotstar_clone_elements/tr4.avif" alt="">
-    <img style="position: absolute; 
-            top: 208%;   
-            width: 10vw; 
-            left: 77%;"
-     src="Hotstar_clone_elements/tr5.avif" alt=""> 
-    <img style="position: absolute; 
-            top: 250%;   
-            width: 10vw; 
-            left: 10%;"
-     src="Hotstar_clone_elements/tr6.avif" alt=""> 
-    <img style="position: absolute; 
-            top: 240%;   
-            width: 8vw; 
-            left: 26%;"
-     src="Hotstar_clone_elements/tr7.webp" alt=""> 
-    <img style="position: absolute; 
-            top: 222%;   
-            width: 10vw; 
-            left: 60%;"
-     src="Hotstar_clone_elements/tr9.avif" alt=""> 
-    <img style="position: absolute; 
-            top: 228%;   
-            width: 5vw; 
-            left: 73%;"
-     src="Hotstar_clone_elements/tr10.avif" alt=""> 
+
+   
 
 </body>
 </html>
