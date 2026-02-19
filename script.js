@@ -127,7 +127,7 @@ buttonOTP.addEventListener("click",
         }
         else{
         errorhandle.style.display = "none";
-        window.location.href = "index.html";
+        window.location.href = "log.html";
         }
         
     })
