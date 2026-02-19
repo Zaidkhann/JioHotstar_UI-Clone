@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>JioHotstar - Watch TV Shows, Movies, Specials, Live Cricket and Football</title>
+    <link rel="shortcut icon" href="Hotstar_clone_elements/channels4_profile.jpg" type="image/x-icon">
+</head>
+<style>
+    .advertisement{
+        justify-self: center;
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        border-radius: 20px;
+        width: 80vw;
+        height: 50vh;
+        padding-top: 2px;
+        background-image: linear-gradient(270deg, rgb(25, 28, 43) 0%, rgb(15, 16, 20) 100%);
+        margin-right: 1vw;
+    }
+ 
+   #img_ad{
+        padding-bottom: 12px;
+        width: 50vw;
+        height: 45vh;
+        border-radius: 20px;
+        margin-top: 16px;
+        box-shadow: 15px 0 25px rgb(15, 17, 26);
+
+    }
+    #button_ad{
+        color: rgb(255, 255, 255);
+        font-weight: bolder;
+        border-radius: 5px;
+        background-color:  rgb(40, 44, 67);
+       padding: 8px 28px;
+       margin-left: 10px;
+      
+    }
+    #imgAnimation{
+        animation: slide 35s infinite;
+        position: relative;
+        z-index: 1;
+ 
+    }
+    @keyframes slide{
+        0%,15% {
+    transform: translateX(0);
+  }
+  20% , 35%{
+
+    transform: translateX(-90vw);
+  }
+  40% , 55%{
+    transform: translateX(-180vw);
+  }
+  60%,75%{
+    transform: translateX(-270vw);
+  }
+  80%,95%{
+    transform: translateX(-360vw);
+
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+    }
+
+
+.watchnow_button{
+    position: absolute;
+    width: 26vw;
+    display: flex;              
+    justify-content: center;    
+    align-items: center;
+    height: 10vh;
+    color: white;
+    font-weight: bolder;
+    font-size: 1.4rem;
+    background: linear-gradient(100deg, rgb(57, 101, 196),rgb(231, 0, 127));
+    border-radius: 6px;
+    left: 68%;
+    top: 80%;
+    
+
+}
+.watchnow_button2{
+    position: absolute;
+    width: 26vw;
+    display: flex;              
+    justify-content: center;    
+    align-items: center;
+    height: 10vh;
+    color: white;
+    font-weight: bolder;
+    font-size: 1.4rem;
+    background: linear-gradient(100deg, rgb(57, 101, 196),rgb(231, 0, 127));
+    border-radius: 6px;
+    left: 166%;
+    top: 80%;
+    
+    
+}
+.watchnow_button3{
+    position: absolute;
+    width: 26vw;
+    display: flex;              
+    justify-content: center;    
+    align-items: center;
+    height: 10vh;
+    color: white;
+    font-weight: bolder;
+    font-size: 1.4rem;
+    background: linear-gradient(100deg, rgb(57, 101, 196),rgb(231, 0, 127));
+    border-radius: 6px;
+    left: 265%;
+    top: 80%;
+    
+    
+}
+.watchnow_button4{
+    position: absolute;
+    width: 26vw;
+    display: flex;              
+    justify-content: center;    
+    align-items: center;
+    height: 10vh;
+    color: white;
+    font-weight: bolder;
+    font-size: 1.4rem;
+    background: linear-gradient(100deg, rgb(57, 101, 196),rgb(231, 0, 127));
+    border-radius: 6px;
+    left: 367%;
+    top: 80%;
+    
+    
+}
+.watchnow_button5{
+    position: absolute;
+    width: 26vw;
+    display: flex;              
+    justify-content: center;    
+    align-items: center;
+    height: 10vh;
+    color: white;
+    font-weight: bolder;
+    font-size: 1.4rem;
+    background: linear-gradient(100deg, rgb(57, 101, 196),rgb(231, 0, 127));
+    border-radius: 6px;
+    left: 466%;
+    top: 80%;
+    
+    
+}
+
+.herapherI{
+    position: absolute;
+    display: flex;
+    top: 70%;
+    width: 30vw;
+    height: 22vh;
+    left: 305%;
+    top: 60%;
+}
+.dolittle{
+    position: absolute;
+    display: flex;
+    top: 70%;
+    width: 30vw;
+    height: 22vh;
+    left: 5%;
+    top: 40%;
+}
+.conjuring{
+    position: absolute;
+    display: flex;
+    top: 70%;
+    width: 30vw;
+    height: 22vh;
+    left: 105%;
+    top: 40%;
+}
+.the-50{
+    position: absolute;
+    display: flex;
+    top: 70%;
+    width: 15vw;
+    height: 15vh;
+    left: 205%;
+    top: 10%;
+}
+
+.kis-kisko-pyaar-karoon-2{
+    position: absolute;
+    display: flex;
+    top: 70%;
+    width: 15vw;
+    height: 15vh;
+    left: 405%;
+    top: 50%;
+}
+
+#dolittleText{
+    position: absolute;
+    display: inline-block;
+    top: 65%;
+    left: 7%;
+    color: white;
+    width: 30vw;
+    
+}
+#conjuringText{
+    position: absolute;
+    display: inline-block;
+    top: 65%;
+    left: 107%;
+    color: white;
+    width: 30vw;
+    
+}
+#the50Text{
+    position: absolute;
+    display: inline-block;
+    top: 65%;
+    left: 207%;
+    color: white;
+    width: 30vw;
+    
+}
+#phirherapherText{
+    position: absolute;
+    display: inline-block;
+    top: 8%;
+    left: 303%;
+    color: rgb(44, 44, 44);
+    font-weight: bold;
+    width: 30vw;
+    
+}
+#kiskiskoText{
+    position: absolute;
+    display: inline-block;
+    top: 65%;
+    left: 407%;
+    color: white;
+    width: 30vw;
+   
+}
+.top-trend-movies{
+    display: flex;
+    width: 89vw;
+    height: auto;
+    justify-self: right;
+    gap: 10px;
+    flex-wrap: wrap;
+    row-gap: 28px;
+}
+
+
+
+.top-trend-movies{
+    display: flex;
+    width: 89vw;
+    height: auto;
+    justify-self: right;
+    gap: 10px;
+    flex-wrap: wrap;
+    row-gap: 28px;
+}
+
+
+.top-trend-movies img{
+    width: 14vw;
+    height: 39vh;
+    border-radius: 8px;
+    position: relative;
+
+}
+
+.top-trend-movies img:hover{
+    box-shadow: 0 0 30px rgb(167, 164, 164);
+}
+
+
+.nav{
+    display: flex;
+    flex-direction: column;
+    width: 9vw;
+    height: 100vh;
+    position:fixed ;
+    justify-self: left;
+    align-self: self-start;
+    justify-items: center;
+    background-color: rgb(15, 16, 20);
+    z-index: 1000;
+}
+
+.logo_cls{
+    width: 7vw;
+    height: 5vh;
+    justify-items: center;
+    margin-top: 35px;
+}
+
+.homelogo{
+    width: 7vw;
+    height: auto;
+    justify-items: center;
+    align-items: center;
+    margin-top: 55px;
+    
+}
+
+.navlogos{
+    width: 7vw;
+    height: auto;
+    justify-items: center;
+    align-items: center;
+    margin-top: 34px;
+}
+
+.footer{
+    width: 89vw;
+    height: 36vh;
+    margin-top: 20vh;
+    background-color: rgb(15, 16, 20);
+    display: flex;
+    justify-self: right;
+    gap: 13vw;
+}
+
+.contactus{
+    display: flex;
+    gap: 2vw;
+    margin-top: 30px;
+}
+
+
+.unique img:hover{
+    filter: drop-shadow(0px 0px 8px rgb(255, 255, 255));
+
+}
+@media (max-width: 768px) {
+    .top-trend-movies img{
+    display: flex;
+    width: 12vw;
+    height: 16vh;
+    border-radius: 8px;
+    position: relative;
+    flex-wrap: wrap;
+  }
+  .top-trend-movies{
+    display: flex;
+    width: 40vw;
+    height: auto;
+    justify-self: center;
+
+    gap: 5px;
+    flex-wrap: wrap;
+    row-gap: 28px;
+}
+  .advertisement{
+        justify-self: left;
+        margin-left: 6vw;
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        border-radius: 20px;
+        width: 50vw;
+        height: 25vh;
+}
+
+.watchnow_button{
+    position: absolute;
+    width: 14vw;
+    display: flex;              
+    justify-content: center;    
+    align-items: center;
+    height: 3vh;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+}
+.watchnow_button5{
+    position: absolute;
+    width: 14vw;
+    display: flex;              
+    justify-content: center;    
+    align-items: center;
+    height: 3vh;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+}
+.watchnow_button2{
+    position: absolute;
+    width: 14vw;
+    display: flex;              
+    justify-content: center;    
+    align-items: center;
+    height: 3vh;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+}
+.watchnow_button3{
+    position: absolute;
+    width: 14vw;
+    display: flex;              
+    justify-content: center;    
+    align-items: center;
+    height: 3vh;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+}
+.watchnow_button4{
+    position: absolute;
+    width: 14vw;
+    display: flex;              
+    justify-content: center;    
+    align-items: center;
+    height: 3vh;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+}
+   #img_ad{
+        width: 30vw;
+        height: 20vh;
+}
+.footer{
+    width: 40vw;
+    height: 24vh;
+    margin-top: 4vh;
+    background-color: rgb(15, 16, 20);
+    display: flex;
+    justify-self: left;
+    gap: 3vw;
+}
+
+.nav{
+    display: flex;
+    flex-direction: column;
+    width: 1vw;
+    height: 100vh;
+    position:fixed ;
+    justify-self: left;
+    align-self: self-start;
+    justify-items: center;
+    background-color: rgb(15, 16, 20);
+    z-index: 1000;
+}
+
+}
+
+</style>
+<body style="background-color: rgb(15, 16, 20);">
+
+    <div class="nav">
+        <div class="logo_cls">
+        <img style="width: 51px; height: 38px;" src="Hotstar_clone_elements/logo.png" alt="">
+        </div>
+        <div class="homelogo">
+            <img style="width: 21px; height: 21px;filter: drop-shadow(0 0 20px rgb(255, 255, 255)); " src="Hotstar_clone_elements/icons8-home-64.png" alt="">
+        </div>
+        <div class="unique">
+
+        <div class="navlogos">
+        <img style="width: 20px; height: 20px;" src="Hotstar_clone_elements/icons8-search-24.png" alt="">
+        </div>
+        <div class="navlogos">
+            <img style="width: 20px; height: 20px;" src="Hotstar_clone_elements/icons8-tv-48.png" alt="">
+        </div>
+        <div class="navlogos">
+            <img style="width: 20px; height: 20px;" src="Hotstar_clone_elements/icons8-popcorn-50.png" alt="">
+        </div>
+        <div class="navlogos">
+            <img style="width: 20px; height: 20px;" src="Hotstar_clone_elements/icons8-run-50.png" alt="">
+        </div>
+        <div class="navlogos">
+            <img style="width: 20px; height: 20px;" src="Hotstar_clone_elements/icons8-movie-projector-24.png" alt="">
+        </div>
+        <div class="navlogos">
+            <img style="width: 20px; height: 20px;" src="Hotstar_clone_elements/icons8-categories-30.png" alt="">
+        </div>
+        <div class="navlogos">
+            <img style="width: 20px; height: 20px;" src="Hotstar_clone_elements/icons8-profile-24.png" alt="">
+        </div>
+        </div>
+
+    </div>
+
+
+    <div class="advertisement">
+        <img id="img_ad" src="Hotstar_clone_elements/Screenshot 2026-02-14 230512.png" alt="No advertisement">
+        <div style="flex-direction: column; align-self: self-start; margin-top: 30px;">
+        <span style="background-color: goldenrod; border-radius: 5px; align-self: self-start; font-family: sans-serif; font-weight: bold; color: rgb(94, 70, 4); padding: 0 4px;">Ad</span>
+        <span style="font-weight: bold; font-family: sans-serif; color: white; align-self: self-start;  padding-left: 3px;">Zakha AI</span>
+        <p style="color: rgb(136, 135, 135);font-size: 0.8rem; ">Answers & Inspirations</p>
+            <p style="color: white; margin-bottom: 100px;">Helps you get answers, find inspirations, and be more productive</p>
+            <a target="_blank" id="button_ad" href="https://zakhaai.onrender.com/">Try Now</a>
+    </div>
+    </div>
+    <div class="overflow-hidden">
+    <div id="imgAnimation" class="relative w-[89vw] ml-auto flex  shrink-0 ">
+        <img src="Hotstar_clone_elements/1769066218889-i.png" alt="">
+        <img src="Hotstar_clone_elements/1769498720615-i.png" alt="">
+        <img src="Hotstar_clone_elements/1770212880233-i.png" alt="">
+        <img src="Hotstar_clone_elements/1734519251137-i.png" alt="">
+        <img src="Hotstar_clone_elements/1770317011704-i.png" alt="">
+        
+    
+
+        <a class="watchnow_button" href="https://www.hotstar.com/in/movies/dolittle/1971000918/watch">Watch Now</a>
+        <a class="watchnow_button2" href="https://www.hotstar.com/in/movies/the-conjuring-last-rites/1271526246/watch">Watch Now</a>
+        <a class="watchnow_button3" href="https://www.hotstar.com/in/shows/the-50/1271519546/watch?fallbackEpisodeId=1271526374">Watch Now</a>
+        <a class="watchnow_button4" href="https://www.hotstar.com/in/movies/phir-hera-pheri/1971011095/watch?search_query=phir">Watch Now</a>
+        <a class="watchnow_button5" href="https://www.hotstar.com/in/movies/kis-kisko-pyaar-karoon-2/1271527818/watch">Watch Now</a>
+
+        <img class="herapherI" src="Hotstar_clone_elements/herapheri.png" alt="">
+        <img class="dolittle" src="Hotstar_clone_elements/dolittle.png" alt="">
+        <img class="conjuring" src="Hotstar_clone_elements/conjuring.png" alt="">
+        <img class="the-50" src="Hotstar_clone_elements/the50.png" alt="">
+        <img class="kis-kisko-pyaar-karoon-2" src="Hotstar_clone_elements/kiskiskopyarkrun.png" alt="">
+
+        <p id="dolittleText">
+            <b>2020 • U/A 7+ • 1h 37m • 4 Languages</b><br><br>
+
+            Robert Downey Jr. electrifies one of literature's most enduring characters in a vivid reimagining of the classic tale of the man who could talk <br><br>
+            <b>Action | Adventure | Comedy | Family</b>
+        </p>
+        <p id="conjuringText">
+            <b>2025 • A • 2h 15m • 4 Languages </b><br><br>
+
+            Experience the case that strikes at the core of Ed and Lorraine's mission and attacks the very heart of the  Warren family... their daughter, Judy.<br><br>
+            <b>Horror | Paranormal | Supernatural | </b>
+
+        </p>
+
+        <p id="the50Text">
+            <b>2026 • U/A 16+ • Hindi </b><br><br>
+
+India's biggest reality show is about to redefine reality! 50 celebs face survival challenges and intense mind games under the watchful eye of the masked lion.<br><br>
+
+<b>Reality | Celebrities | Competition | Feel Good</b>
+        </p>
+
+        <p id="phirherapherText">
+            <b>2006 • U/A 7+ • 2h 30m • Hindi</b><br><br>
+
+A scam leaves Babu Bhaiya, Raju, and Shyam in Tiwari's debt. Desperate, they turn to drugs. Can they outsmart Tiwari and regain their wealth?<br><br>
+
+<b>Comedy | Slapstick | Goofy | Ensemble </b>
+        </p>
+
+        <p id="kiskiskoText">
+            <b>2025 • U/A 16+ • 2h 21m • Hindi</b><br><br>
+
+Mohan wants to marry the love of his life, Sania, but destiny has a madcap plan! He ends up marrying three women of different religions, and chaos follows.<br><br>
+
+<b>Comedy | Drama | Slapstick | Hidden Identity</b>
+        </p>
+
+
+    </div>
+    </div>
+
+
+    
+<br><br>
+<p style="font-weight: bolder; color: white; font-size:x-large; margin-left: 9vw;">Popular Movies</p><br>
+    <div class="top-trend-movies">
+        <a href="https://www.hotstar.com/in/movies/how-to-train-your-dragon-the-hidden-world/1271514010/watch"><img src="Hotstar_clone_elements/trend1.png" alt=""></a>
+        <a href="https://www.hotstar.com/in/movies/predator-badlands/1271435435/watch?search_query=badland"><img src="Hotstar_clone_elements/trend2.png" alt=""></a>
+        <a href="https://www.hotstar.com/in/movies/ask-me-what-you-want/1271497851/watch?search_query=ask+me"><img src="Hotstar_clone_elements/trend3.png" alt=""></a>
+        <a href="https://www.hotstar.com/in/movies/lal-salaam/1271527905/watch?search_query=lal+sala"><img src="Hotstar_clone_elements/trend4.png" alt=""></a>
+        <a href="https://www.hotstar.com/in/movies/garam-masala/1260107551/watch?search_query=garam+masa"><img src="Hotstar_clone_elements/trend5.avif" alt=""></a>
+        <a href="https://www.hotstar.com/in/movies/kung-fu-panda-4/1971011089/watch?search_query=kungfu"><img src="Hotstar_clone_elements/trend6.avif" alt=""></a>
+        <a href="https://www.hotstar.com/in/movies/jurassic-park/1971000492/watch?search_query=jurassic"><img src="Hotstar_clone_elements/trend7.png" alt=""></a>
+        <a href="https://www.hotstar.com/in/movies/ms-dhoni-the-untold-story/1770003314/watch?search_query=ms+dhone"><img src="Hotstar_clone_elements/trend8.avif" alt=""></a>
+        <a href="https://www.hotstar.com/in/movies/the-bad-guys-2/1271510204/watch?search_query=bad+g"><img src="Hotstar_clone_elements/trend9.avif" alt=""></a>
+        <a href="https://www.hotstar.com/in/movies/12th-fail/1260161273/watch?search_query=12"><img src="Hotstar_clone_elements/trend10.avif" alt=""></a>
+        <a href="https://www.hotstar.com/in/movies/kis-kisko-pyaar-karoon/1260132051/watch?search_query=kiskis+ko"><img src="Hotstar_clone_elements/trend11.png" alt=""></a>
+        <a href="https://www.hotstar.com/in/movies/border/1271522304/watch?search_query=border"><img src="Hotstar_clone_elements/trend12.png" alt=""></a>
+     
+    </div>
+
+<br><br>
+<p style="font-weight: bolder; color: white; font-size:x-large; margin-left: 9vw;">Action Extravaganza</p><br>
+    <div class="top-trend-movies">
+        <a href="https://www.hotstar.com/in/movies/anaconda-cursed-jungle/1271532977/watch?search_query=anaconda"><img src="Hotstar_clone_elements/advent1.png" alt=""></a>
+        <a href="https://www.hotstar.com/in/movies/singham-returns/1000034506/watch?search_query=singam+retur"><img src="Hotstar_clone_elements/advent2.png" alt=""></a>
+        <a href="https://www.hotstar.com/in/shows/game-of-thrones/1971002880/game-of-thrones/1971035002/watch?search_query=game+of"><img src="Hotstar_clone_elements/advent3.png" alt=""></a>
+        <a href="https://www.hotstar.com/in/movies/monster-run/1271529293/watch?search_query=monster+run"><img src="Hotstar_clone_elements/advent4.png" alt=""></a>
+        <a href="https://www.hotstar.com/in/shows/a-knight-of-the-seven-kingdoms/1271461884/a-knight-of-the-seven-kingdoms/1271522501/watch?search_query=knight+of+the"><img src="Hotstar_clone_elements/advent5.png" alt=""></a>
+        <a href="https://www.hotstar.com/in/movies/liger-saala-crossbreed/1260115642/watch?search_query=liger"><img src="Hotstar_clone_elements/advent6.png" alt=""></a>
+
+
+    </div>
+<br><br>
+<p style="font-weight: bolder; color: white; font-size:x-large; margin-left: 9vw;">Kids Section</p><br>
+    <div class="top-trend-movies">
+        <a href="https://www.hotstar.com/in/shows/doraemon/1260021004/doraemon/1271316298/watch?search_query=doraemon"><img src="Hotstar_clone_elements/kid1.png" alt="">
+        <a href="https://www.hotstar.com/in/movies/motu-patlu-in-hong-kong-kung-fu-king-3/1971000819/watch?search_query=kung+fu+motu"><img src="Hotstar_clone_elements/kid2.png" alt=""></a>
+        <a href="https://www.hotstar.com/in/shows/munki-and-trunk/1971003183/munki-and-trunk/1971069673/watch?search_query=munk+tru"><img src="Hotstar_clone_elements/kid3.png" alt=""></a>
+        <a href="https://www.hotstar.com/in/shows/peppa-pig/1971003137/watch?fallbackEpisodeId=1971067709&search_query=munk+tru"><img src="Hotstar_clone_elements/kid4.png" alt=""></a>
+        <a href="https://www.hotstar.com/in/shows/mashas-spooky-stories/1971003144/soul-freezing-tale-of-grim-forest-and-tiny-timid-bug/1971066479/watch?search_query=masha"><img src="Hotstar_clone_elements/kid5.png" alt=""></a>
+        <a href="https://www.hotstar.com/in/shows/mr-bean/1971308273/mr-beans-exam-goes-wrong/1971308320/watch?search_query=mr+bean"><img src="Hotstar_clone_elements/kid6.png" alt=""></a>
+    </div>
+<br><br>
+<p style="font-weight: bolder; color: white; font-size:x-large; margin-left: 9vw;">Popular in Romance</p><br>
+    <div class="top-trend-movies">
+        <a href="https://www.hotstar.com/in/movies/lover/1271271436/watch?search_query=lover"><img src="Hotstar_clone_elements/roman1.png" alt=""></a>
+        <a href="https://www.hotstar.com/in/movies/do-aur-do-pyaar/1271317574/watch?search_query=do+or"><img src="Hotstar_clone_elements/roman2.png" alt=""></a>
+        <a href="https://www.hotstar.com/in/movies/pyaar-kiya-to-darna-kya/1271324432/watch?search_query=pyar+kiya"><img src="Hotstar_clone_elements/roman3.png" alt=""></a>
+        <a href="https://www.hotstar.com/in/movies/fifty-shades-of-grey/1971000518/watch?search_query=fifty+shade"><img src="Hotstar_clone_elements/roman4.png" alt=""></a>
+        <a href=""><img src="Hotstar_clone_elements/roman5.png" alt=""></a>
+        <a href="https://www.hotstar.com/in/movies/ajab-prem-ki-ghazab-kahani/1971000415/watch?search_query=ajab"><img src="Hotstar_clone_elements/roman6.png" alt=""></a>
+    </div>
+
+    <footer>
+        <div class="footer">
+            <div>
+                <p style="color: #E1E6F0; font-size: 16px; font-family: sans-serif;">Company</p>
+                <p style="color: #8F98B2; font-size: 14px; font-family: sans-serif; margin-top: 5vh;"><a href="https://www.hotstar.com/about-us/in">About Us</a></p>
+                <p style="color: #8F98B2; font-size: 14px; font-family: sans-serif; margin-top: 3vh;"><a href="https://www.jiostar.com/">Careers</a></p>
+                <p style="color: #7A7094; font-size: 14px; font-family: sans-serif; margin-top: 5vh;">2026 STAR. All Right Reserved.</p>
+                <pre><p style="color: #7A7094; font-size: 14px; font-family: sans-serif; margin-top: 3vh;">Terms of Use    Privacy Policy   FAQ</p></pre>
+            </div>
+
+            <div>
+                <p style="color: #E1E6F0; font-size: 16px; font-family: sans-serif;">View Website in</p>
+                <p style="color: #8F98B2; font-size: 14px; font-family: sans-serif; margin-top: 5vh;">English</p>
+            </div>
+            <div>
+                <p style="color: #E1E6F0; font-size: 16px; font-family: sans-serif;">Need Help?</p>
+                <p style="color: #8F98B2; font-size: 14px; font-family: sans-serif; margin-top: 5vh;"><a href="https://help.hotstar.com/in/en/support/home">Visit Help Center</a></p>
+                <p style="color: #8F98B2; font-size: 14px; font-family: sans-serif; margin-top: 5vh;"><a href="https://help.hotstar.com/in/en/support/tickets/feedback">Share Feedback</a></p>
+            </div>
+            <div>
+                <p style="color: #E1E6F0; font-size: 16px; font-family: sans-serif;">Connect With Us</p>
+                <div class="contactus">
+                <a href="https://instagram.com/zaydkhan__"><img style="width: 36px; height: 36px;" src="Hotstar_clone_elements/icons8-instagram-24.png" alt=""></a>
+                <a href="https://www.linkedin.com/in/zaid-khan-3bb03b366/"><img style="width: 36px; height: 36px;" src="Hotstar_clone_elements/icons8-linkedin-24.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
